@@ -1,0 +1,5 @@
+function bounce()  {
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  let tabId = urlSearchParams.get("tabId");
+  chrome.tabs.highlight(tabId);
+}
